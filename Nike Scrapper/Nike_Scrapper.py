@@ -23,8 +23,6 @@ for styles in df:
             currenr_price = item['price']['currentPrice'],
             Final_price = item['price']['fullPrice'],
             image = item['images']['portraitURL']
-            # cloud_ID = item['cloudProductId']
-            # print(cloud_ID)
             print(name,subtitle,currenr_price,Final_price,image)
             data = {
                 'name': name,
@@ -33,7 +31,6 @@ for styles in df:
                 'Final_price': Final_price,
                 'image': image,
                 'styles': styles,
-                # 'cloud_ID': cloud_ID
             }
             df = pd.DataFrame(data)
             appended_data.append(df)
