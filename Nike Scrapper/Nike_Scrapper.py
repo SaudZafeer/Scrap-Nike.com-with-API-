@@ -40,4 +40,4 @@ for styles in df:
     except:
         print("No data found")
 appended_data = pd.concat(appended_data)
-appended_data.to_csv(r"Nike1.csv",index=False)
+appended_data.to_csv(r"Nike.csv",index=False)
